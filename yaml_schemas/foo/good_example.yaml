@@ -1,7 +1,7 @@
 dataProductName: review
 sourceConfigs:
   - inputTopic: data.input.1
-    # fieldMapping:
+    fieldMapping: 2
     #     inputField: message
     #     targetField: message
     bar: saas

@@ -21,8 +21,9 @@ schema;sourceConfig:
       required: true
       type: str
     
-    # fieldMapping:
-    #   required: false
+    fieldMapping:
+      type: int
+      required: false
     #   type: map
     #   maping:
     #     inputField:
