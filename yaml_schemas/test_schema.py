@@ -1,3 +1,4 @@
+import pytest
 from pykwalify.core import Core
 
 
@@ -11,6 +12,7 @@ class TestSchemas:
         c.validate(raise_exception=True)
 
     def test_bad_schema(self):
-        data = f"{self.PATH}/bad_example.yaml"
-        c = Core(source_file=data, schema_files=self.SCHEMAS)
-        c.validate(raise_exception=True)
+        with pytest.raises(Exception):
+            data = f"{self.PATH}/bad_example.yaml"
+            c = Core(source_file=data, schema_files=self.SCHEMAS)
+            c.validate(raise_exception=True)

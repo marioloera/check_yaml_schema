@@ -1,4 +1,4 @@
-dataProductName: review
+BAD_NAME: review
 sourceConfigs:
   - inputTopic: data.input.1
     fieldMapping:
