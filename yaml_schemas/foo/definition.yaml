@@ -11,6 +11,11 @@ mapping:
       - type: 
         include: sourceConfig
 
+  favoriteColor:
+    required: false
+    type: str
+    enum: ['BLUE', 'RED']
+
 schema;sourceConfig:
   type: map
   mapping:

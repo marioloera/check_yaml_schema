@@ -8,3 +8,4 @@ sourceConfigs:
     fieldMapping:
       inputField: from
       targetField: from
+favoriteColor: BLUE
