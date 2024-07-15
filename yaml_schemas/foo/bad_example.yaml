@@ -1,1 +1,6 @@
-dataProductName: review
+badNameProductName: review
+sourceConfigs:
+  - inputTopic: data.input.1
+    fieldMapping:
+      inputField: message
+      targetField: message

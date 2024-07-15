@@ -11,9 +11,6 @@ mapping:
       - type: 
         include: sourceConfig
 
-  foo:
-    type: int
-
 schema;sourceConfig:
   type: map
   mapping:
@@ -22,18 +19,13 @@ schema;sourceConfig:
       type: str
     
     fieldMapping:
-      type: int
       required: false
-    #   type: map
-    #   maping:
-    #     inputField:
-    #       required: false
-    #       type: str
+      type: map
+      mapping:
+        inputField:
+          required: true
+          type: str
 
-    bar:
-      type: str
-
-
-
-# schema;fieldMapping:
-#   required: trie
+        targetField:
+          required: true
+          type: str
