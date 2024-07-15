@@ -1,0 +1,38 @@
+type: map
+mapping:
+  dataProductName:
+    required: true
+    type: str
+
+  sourceConfigs:
+    required: false
+    type: seq
+    sequence:
+      - type: 
+        include: sourceConfig
+
+  foo:
+    type: int
+
+schema;sourceConfig:
+  type: map
+  mapping:
+    inputTopic:
+      required: true
+      type: str
+    
+    # fieldMapping:
+    #   required: false
+    #   type: map
+    #   maping:
+    #     inputField:
+    #       required: false
+    #       type: str
+
+    bar:
+      type: str
+
+
+
+# schema;fieldMapping:
+#   required: trie

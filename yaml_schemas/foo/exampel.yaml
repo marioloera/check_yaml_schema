@@ -1,0 +1,11 @@
+dataProductName: review
+sourceConfigs:
+- inputTopic: data.input.1
+  fieldMapping:
+  - inputField: message
+    targetField: message
+- inputTopic: data.input.2
+  fieldMapping:
+  - inputField: from
+    targetField: from
+outputValueSchema: dataproduct/review.avsc

@@ -1,0 +1,14 @@
+dataProductName: review
+sourceConfigs:
+  - inputTopic: data.input.1
+    # fieldMapping:
+    #     inputField: message
+    #     targetField: message
+    bar: saas
+  - inputTopic: data.input.2
+    # fieldMapping:
+    #   inputField: message
+    #   targetField: message
+  - inputTopic: data.input.3
+    bar: 32l
+foo: 1
